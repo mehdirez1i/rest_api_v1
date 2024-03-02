@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule ^signup/?$ signup.php [NC,L]
+RewriteRule ^signup/([0-9]+)/?$ signup.php?id=$1 [NC,L]
+SetEnvIf Authorization .+ HTTP_AUTHORIZATION=$0
+RewriteRule ^login/?$ login.php [NC,L]
+RewriteRule ^login/([0-9]+)/?$ login.php?id=$1 [NC,L]

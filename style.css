@@ -1,0 +1,8 @@
+body{
+    background: #ccc;
+}
+.container {
+    border: solid 2px  black;
+    margin: 1rem;
+    padding: 0.5rem;
+}
